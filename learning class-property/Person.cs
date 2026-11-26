@@ -17,7 +17,7 @@ namespace lerning_Class_Property
             this.name = name;
         }
         public void Greet() => Console.WriteLine($" NAME : {name}");
-        public void wellcome() =>Greet();
+        public void wellcome() =>this.Greet();
     }
 }
 
