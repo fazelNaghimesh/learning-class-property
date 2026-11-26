@@ -8,25 +8,16 @@ namespace lerning_Class_Property
 {
     public class Person
     {
-        public string? Name { get; }
-        private int _age;
-        public int Age
-        {
-            get { return _age; }
-            set
-            {
-                if (value < 0)
-                    throw new ArgumentException("===error=== age can not be negative");
-                _age = value;
-            }
-        }
-        public Person(string name, int age)
-        {
-            Name = name;
-            Age = age;
-        }
-        public void Greet() => Console.WriteLine($"My name is {Name} - {Age}");
+       
+     public string? name { get; }
 
+        public Person() : this("ali") {  }
+        public Person(string name)
+        {
+            this.name = name;
+        }
+        public void Greet() => Console.WriteLine($" NAME : {name}");
+        public void wellcome() =>Greet();
     }
 }
 

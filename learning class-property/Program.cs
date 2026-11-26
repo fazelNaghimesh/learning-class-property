@@ -1,14 +1,10 @@
 ﻿
 using lerning_Class_Property;
 
-try
-{
-    Person p1 = new Person("fazel", -22);
+var p1 = new Person("fazel");
 
-    p1.Greet();
-}
-catch (Exception ex)
-{
-    Console.WriteLine(ex.Message);
-}
+p1.wellcome();
 
+var p2 = new Person();
+
+p2.wellcome();
